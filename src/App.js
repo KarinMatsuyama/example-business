@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import NavBar from './components/NavBar/NavBar'
 import HomePage from './pages/HomePage';
@@ -12,15 +13,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <BrowserRouter>
-          <NavBar />
-          <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='' component={Page404} />
-          </Switch>
-        </BrowserRouter>
-      </div>
+      <ParallaxProvider>
+        <div className="App">
+          <BrowserRouter>
+            <NavBar />
+            <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route exact path='' component={Page404} />
+            </Switch>
+          </BrowserRouter>
+        </div>
+      </ParallaxProvider>
     );
   }
 }
