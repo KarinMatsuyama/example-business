@@ -26,7 +26,7 @@ class HomePage extends Component {
         <br></br>
         <Services name='services'/>
         <AboutUs name='about'/>
-        <Reviews name='reviews' />
+        <Reviews name='reviews'/>
         <ContactUs name='contact'/>
       </div>
     )
