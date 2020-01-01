@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
+import { Navbar, Nav } from 'react-bootstrap';
+import { Element , Events, animateScroll as scroll, scrollSpy, scroller, Button } from 'react-scroll'
 
 class NavBar extends Component {
+  scrollToElem(elemName) {
+    scroller.scrollTo(elemName, {
+      offset: -60
+    })
+  }
+
   render() {
     return (
-      <div className="pos-f-t">
-        <div className="collapse" id="navbarToggleExternalContent">
-          <div className="bg-dark p-4">
-            <ul className="nav navbar-nav">
-              <li><a href="/">Home</a></li>
-              <li><a href="/about-us">about us</a></li>
-              <li><a href="/calendar">calendar</a></li>
-              <li><a href="/contact-us">contact us</a></li>
-            </ul>
-          </div>
-        </div>
-        <nav className="navbar navbar-dark bg-dark">
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-      </div>
+      <Navbar sticky="top" bg="light" expand="lg">
+        <Navbar.Brand href="/">Your Brand Name</Navbar.Brand>
+        <Nav className="mr-auto">
+          <Nav.Link onClick={() => this.scrollToElem('home')} >Home</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('services')} >Services</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('about')} >About</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('contact')} >Contact</Nav.Link>
+        </Nav>
+      </Navbar>
     );
   }
 }
