@@ -5,20 +5,27 @@ import { Element , Events, animateScroll as scroll, scrollSpy, scroller, Button 
 class NavBar extends Component {
   scrollToElem(elemName) {
     scroller.scrollTo(elemName, {
-      offset: -60
+      delay: 300,
+      smooth: true,
+      offset: -65
+    })
+  }
+  scrollToTop() {
+    scroll.scrollToTop({
+      delay: 300
     })
   }
 
   render() {
     return (
-      <Navbar sticky="top" bg="light" expand="lg">
-        <Navbar.Brand href="/">Your Brand Name</Navbar.Brand>
+      <Navbar sticky="top" bg="dark" variant="dark" expand="lg">
+        <Navbar.Brand href="/">LOGO</Navbar.Brand>
         <Nav className="mr-auto">
-          <Nav.Link onClick={() => this.scrollToElem('home')} >Home</Nav.Link>
-          <Nav.Link onClick={() => this.scrollToElem('services')} >Services</Nav.Link>
-          <Nav.Link onClick={() => this.scrollToElem('about')} >About</Nav.Link>
-          <Nav.Link onClick={() => this.scrollToElem('reviews')} >Reviews</Nav.Link>
-          <Nav.Link onClick={() => this.scrollToElem('contact')} >Contact</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToTop()} >HOME</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('services')} >SERVICES</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('about')} >ABOUT</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('reviews')} >REVIEWS</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('contact')} >CONTACT</Nav.Link>
         </Nav>
       </Navbar>
     );
