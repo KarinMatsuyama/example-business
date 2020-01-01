@@ -1,15 +1,11 @@
 import React, { Component } from 'react';
 
-import Services from './Services';
-import AboutUs from './AboutUs';
-import ContactUs from './ContactUs';
-
-class HomePage extends Component {
+class Services extends Component {
 
   render() {
     return (
-      <div >
-        <h1 name="home">Sims & Sons Electrical and Plumbing</h1>
+      <div id="services">
+        <h1>This is the services page!</h1>
         <br></br>
         <br></br>
         <br></br>
@@ -25,12 +21,13 @@ class HomePage extends Component {
         <br></br>
         <br></br>
         <br></br>
-        <Services name="services"/>
-        <AboutUs name="about"/>
-        <ContactUs name="contact" />
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
       </div>
-    )
+    );
   }
 }
-
-export default HomePage;
+export default Services;
