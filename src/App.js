@@ -15,13 +15,13 @@ class App extends Component {
     return (
       <ParallaxProvider>
         <div className="App">
-        <BrowserRouter>
-          <NavBar />
-          <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='' component={Page404} />
-          </Switch>
-        </BrowserRouter>
+          <BrowserRouter>
+            <NavBar />
+            <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route exact path='' component={Page404} />
+            </Switch>
+          </BrowserRouter>
         </div>
       </ParallaxProvider>
     );
