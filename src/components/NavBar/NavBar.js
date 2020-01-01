@@ -17,6 +17,7 @@ class NavBar extends Component {
           <Nav.Link onClick={() => this.scrollToElem('home')} >Home</Nav.Link>
           <Nav.Link onClick={() => this.scrollToElem('services')} >Services</Nav.Link>
           <Nav.Link onClick={() => this.scrollToElem('about')} >About</Nav.Link>
+          <Nav.Link onClick={() => this.scrollToElem('reviews')} >Reviews</Nav.Link>
           <Nav.Link onClick={() => this.scrollToElem('contact')} >Contact</Nav.Link>
         </Nav>
       </Navbar>
