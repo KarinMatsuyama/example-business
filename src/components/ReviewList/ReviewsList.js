@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import YelpReview from '../YelpReview/YelpReview'
+import YelpReview from '../YelpReview/YelpReview';
 
 class ReviewsList extends Component {
   render() {
