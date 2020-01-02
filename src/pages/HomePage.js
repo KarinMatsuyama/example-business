@@ -14,7 +14,7 @@ import './HomePage.css'
 class HomePage extends Component {
   ParallaxHomeImage() {
     return (
-    <Parallax className="custom-class" tagOuter="figure">
+    <Parallax className="home-page" tagOuter="figure">
         <img className="home-img" src={homeImage} />
         <h1 className="company-name" name="home">Company Name</h1>
         <div className="social-logo">
