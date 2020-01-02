@@ -7,7 +7,7 @@ class NavBar extends Component {
     scroller.scrollTo(elemName, {
       delay: 300,
       smooth: true,
-      offset: -65
+      offset: -50
     })
   }
   scrollToTop() {
