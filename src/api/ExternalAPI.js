@@ -17,6 +17,6 @@ const fetchYelpBusinessInformation = () => {
 }
 
 export default {
-  fetchYelpReviews:             fetchYelpReviews,
+  fetchYelpReviews: fetchYelpReviews,
   fetchYelpBusinessInformation: fetchYelpBusinessInformation
 }
