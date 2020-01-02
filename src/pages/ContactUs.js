@@ -13,7 +13,7 @@ class ContactUs extends Component {
     ExternalAPI.fetchYelpBusinessInformation()
       .then((business) => {
         this.setState({
-          phone:         business.display_phone,
+          phone: business.display_phone,
           messaging_url: business.messaging.url
         })
       })
