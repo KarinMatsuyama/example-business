@@ -21,7 +21,7 @@ class ContactUs extends Component {
   render() {
     return (
       <div id="contact">
-        <h2>Contact Us!</h2>
+        <h2>CONTACT</h2>
         <p>Phone Number: XXXXXXXX</p>
         <Button>Get a quote!</Button>
         <br></br>
