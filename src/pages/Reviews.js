@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReviewsList from '../components/ReviewList/ReviewsList';
 import ExternalAPI from '../api/ExternalAPI.js';
+import './Reviews.css'
 
 class Reviews extends Component {
   state = { yelpReviews: [] }
