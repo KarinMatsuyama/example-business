@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
-import ExternalAPI from '../api/ExternalAPI.js';
 import { Button } from 'react-bootstrap';
 
+import ExternalAPI from '../api/ExternalAPI.js';
+import ContactEmailForm from '../components/ContactEmailForm/ContactEmailForm'
+import BusinessDetails from '../components/BusinessDetails/BusinessDetails'
 
 class ContactUs extends Component {
   state = {
     phone: '',
-    messaging_url: ''
+    messaging_url: '',
   }
 
   componentDidMount() {
@@ -18,42 +20,14 @@ class ContactUs extends Component {
         })
       })
     }
+
   render() {
     return (
       <div id="contact">
         <h2>CONTACT</h2>
-        <p>Phone Number: XXXXXXXX</p>
+        <BusinessDetails />
         <Button>Get a quote!</Button>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
-        <br></br>
+        <ContactEmailForm />
       </div>
     );
   }
