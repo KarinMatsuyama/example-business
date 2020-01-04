@@ -2,10 +2,20 @@
   text-align: center;
 }
 
+h1 {
+  font-size: 70px;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
 h2 {
   font-size: 50px;
   padding-bottom: 50px;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Sarala', sans-serif;
 }
 
 .App-logo {

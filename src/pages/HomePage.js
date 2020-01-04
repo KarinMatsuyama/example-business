@@ -16,7 +16,7 @@ class HomePage extends Component {
     return (
     <Parallax className="home-page" tagOuter="figure">
         <img className="home-img" src={homeImage} />
-        <h1 className="company-name" name="home">Company Name</h1>
+        <h1>HANDY<br />SOLUTIONS</h1>
         <div className="social-logo">
           <a href="https://www.facebook.com" target="_blank"><img className="fb-logo" src={fb} /></a>
           <a href="https://www.instagram.com" target="_blank"><img className="insta-logo" src={insta} /></a>
@@ -28,7 +28,7 @@ class HomePage extends Component {
 
   render() {
     return (
-      <div>
+      <div name="home">
         {this.ParallaxHomeImage()}
         <Services name='services'/>
         <AboutUs name='about'/>

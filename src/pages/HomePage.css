@@ -8,16 +8,6 @@
   width: auto\9;
 }
 
-.company-name {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: 60px;
-  font-weight: bold;
-}
-
 .social-logo {
   position: absolute;
   bottom: 5%;
