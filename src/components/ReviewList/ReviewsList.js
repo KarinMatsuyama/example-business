@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
+import { Carousel } from 'react-bootstrap';
+
 import YelpReview from '../YelpReview/YelpReview';
 import './ReviewsList.css';
-
-import { Carousel } from 'react-bootstrap';
 
 class ReviewsList extends Component {
   render() {
