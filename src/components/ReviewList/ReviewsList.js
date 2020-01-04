@@ -2,15 +2,17 @@ import React, { Component } from 'react';
 import YelpReview from '../YelpReview/YelpReview';
 import './ReviewsList.css';
 
+import { Carousel } from 'react-bootstrap';
+
 class ReviewsList extends Component {
   render() {
     return (
       <div className='reviews-container'>
-        <div className='reviews-list'>
+        <Carousel>
           { this.props.yelpReviews.map((review, index) => {
-            return <YelpReview key={index} review={review} />
+            return <Carousel.Item><YelpReview key={index} review={review} /></Carousel.Item>
           })}
-        </div>
+        </Carousel>
       </div>
     )
   }
