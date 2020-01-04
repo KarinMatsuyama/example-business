@@ -1,0 +1,19 @@
+.nav-bar {
+  background-color: rgba(49, 25, 11, 0.774);
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.logo-text {
+  font-family: 'Montserrat Subrayada', sans-serif;
+}
+
+#nav-menu a {
+  font-weight: 500;
+  color: white;
+  padding-right: 30px;
+
+  &:hover {
+    color: rgb(165, 165, 165);
+  }
+}

@@ -27,7 +27,7 @@ class Services extends Component {
 
     return (
       <div id="services" className="services">
-        <h2>Services</h2>
+        <h2>SERVICES</h2>
         <CardDeck className="mx-auto cards">
         {services.map(service => <Service img={service.img} title={service.title} description={service.description} />)}
         </CardDeck>

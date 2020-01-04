@@ -17,7 +17,7 @@ class Reviews extends Component {
   render() {
     return (
       <div id='reviews'>
-        <h2>Reviews</h2>
+        <h2>REVIEWS</h2>
         { this.state.yelpReviews && <ReviewsList yelpReviews={ this.state.yelpReviews } /> }
       </div>
     );
