@@ -1,7 +1,15 @@
 .reviews-container {
-  text-align: center;
+  margin: 0 50px 0 50px;
 }
 
-.reviews-list{
-  display: inline-block;
+#carousel {
+  margin: auto;
+}
+
+@media screen and (min-width: 300px) {
+  #carousel-item {
+    height: 350px;
+    margin-top: 20px;
+    margin-left: 150px;
+    }
 }

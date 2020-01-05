@@ -8,9 +8,13 @@ class ReviewsList extends Component {
   render() {
     return (
       <div className='reviews-container'>
-        <Carousel>
+        <Carousel id='carousel'>
           { this.props.yelpReviews.map((review, index) => {
-            return <Carousel.Item><YelpReview key={index} review={review} /></Carousel.Item>
+            return (
+              <Carousel.Item id="carousel-item">
+                <YelpReview key={index} review={review} />
+              </Carousel.Item>
+            )
           })}
         </Carousel>
       </div>

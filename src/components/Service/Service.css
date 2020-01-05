@@ -2,3 +2,12 @@
   background-color: transparent;
   border: none;
 }
+
+#card-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#card-text {
+  font-size: 18px;
+}
