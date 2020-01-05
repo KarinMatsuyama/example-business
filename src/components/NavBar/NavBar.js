@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Element , Events, animateScroll as scroll, scrollSpy, scroller, Button } from 'react-scroll'
+import { animateScroll as scroll, scroller } from 'react-scroll'
 
 import logo from '../../assets/logo.png'
 import './NavBar.scss'
@@ -37,8 +37,8 @@ class NavBar extends Component {
 
   render() {
     return (
-      <Navbar onToggle={(expanded) => this.setNavExpanded(expanded)} 
-              expanded={this.state.navExpanded} 
+      <Navbar onToggle={(expanded) => this.setNavExpanded(expanded)}
+              expanded={this.state.navExpanded}
               className="nav-bar" fixed="top" variant="dark" expand="lg">
         <Navbar.Brand href="/">
           <img
