@@ -1,7 +1,9 @@
-.services {
+#services {
   padding: 100px 0 100px 0;
   width: 100%;
-  background-color: rgb(232, 247, 248);
+  background-color: rgb(49, 25, 11);
+  background-image: url('../assets/brick-wall.png');
+  color: #e6e6e6;
 }
 
 .cards {

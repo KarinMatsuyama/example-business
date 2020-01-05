@@ -1,6 +1,13 @@
 #reviews{
-  background-color:#001;
-  background-image: radial-gradient(rgb(20, 19, 27) 15%, transparent 50%);
-  background-size: 60px 60px;
-  background-position: 0 0, 30px 30px;
+  padding: 100px 0 100px 0;
+  width: 100%;
+  background-color: rgb(49, 25, 11);
+  background-image: url('../assets/brick-wall.png');
+  color: #e6e6e6;
+  border: 300px;
+}
+
+#title {
+  margin-bottom: 0;
+  padding-bottom: 20px;
 }

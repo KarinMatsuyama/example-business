@@ -1,5 +1,10 @@
 #yelp-review {
-  padding: 30px;
-  align-content: center;
+  text-align: center;
   margin-left: 300px;
+}
+
+#carousel-item {
+  height: 350px;
+  width: 100%;
+  padding-top: 20px;
 }
