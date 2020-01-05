@@ -1,0 +1,22 @@
+#inquiry {
+  text-align: left;
+}
+
+.form-control {
+  text-align: left;
+  justify-content: left;
+}
+
+.form-label {
+  text-align: left;
+  width: 100%;
+}
+
+.send-btn {
+  background-color: rgb(168, 122, 91);
+  border-color: rgb(168, 122, 91);
+  &:hover {
+    background-color: rgb(192, 159, 138);
+    border-color: rgb(168, 122, 91);
+  }
+}
