@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Container, CardDeck } from 'react-bootstrap';
+import { CardDeck } from 'react-bootstrap';
 
 import Service from '../components/Service/Service';
 import './Services.css'
