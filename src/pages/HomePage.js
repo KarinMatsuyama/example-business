@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import { Parallax } from 'react-scroll-parallax';
 
-import homeImage from '../assets/light-bulbs.jpg';
 import fb from '../assets/fb.svg';
 import insta from '../assets/insta.png';
 import yelp from '../assets/yelp.svg';
@@ -12,24 +10,23 @@ import ContactUs from './ContactUs';
 import './HomePage.css'
 
 class HomePage extends Component {
-  ParallaxHomeImage() {
+  socialMedia() {
     return (
-    <Parallax className="home-page" tagOuter="figure">
-        <img className="home-img" src={homeImage} />
-        <h1>HANDY<br />SOLUTIONS</h1>
-        <div className="social-logo">
-          <a href="https://www.facebook.com" target="_blank"><img className="fb-logo" src={fb} /></a>
-          <a href="https://www.instagram.com" target="_blank"><img className="insta-logo" src={insta} /></a>
-          <a href="https://www.yelp.com" target="_blank"><img className="yelp-logo" src={yelp} /></a>
-        </div>
-    </Parallax>
+      <div className="social-logo">
+        <a href="https://www.facebook.com" target="_blank"><img className="fb-logo" src={fb} /></a>
+        <a href="https://www.instagram.com" target="_blank"><img className="insta-logo" src={insta} /></a>
+        <a href="https://www.yelp.com" target="_blank"><img className="yelp-logo" src={yelp} /></a>
+      </div>
     )
   }
 
   render() {
     return (
       <div name="home">
-        {this.ParallaxHomeImage()}
+        <div id="home" >
+          <h1>HANDY<br />SOLUTIONS</h1>
+          {this.socialMedia()}
+        </div>
         <Services name='services'/>
         <AboutUs name='about'/>
         <Reviews name='reviews'/>
