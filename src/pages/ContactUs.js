@@ -4,6 +4,7 @@ import { Button } from 'react-bootstrap';
 import ExternalAPI from '../api/ExternalAPI.js';
 import ContactEmailForm from '../components/ContactEmailForm/ContactEmailForm'
 import BusinessDetails from '../components/BusinessDetails/BusinessDetails'
+import './ContactUs.css'
 
 class ContactUs extends Component {
   state = {
