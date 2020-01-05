@@ -1,11 +1,9 @@
-.home-page {
-  margin-bottom: 0;
-}
-
-.home-img {
-  width: 100%;
-  height: auto;
-  width: auto\9;
+#home {
+  height: 100vh;
+  width: auto;
+  background-image: url(../assets/light-bulbs.jpg);
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
 
 .social-logo {
