@@ -18,10 +18,12 @@ class AboutUs extends Component {
       <div id="about">
         <h2>ABOUT US</h2>
         { this.state.photos.map((photo, index) => {
-            return <Card id='photo-card' key={index} >
-            <Card.Img className="image" variant="top" src={require(`../assets/images/${photo}`)} alt="photo of a person" />
-            <p class="img-description">{this.state.description[index]}</p>
-          </Card>
+            return (
+              <Card id='photo-card' key={index} >
+                <Card.Img className="image" variant="top" src={require(`../assets/images/${photo}`)} alt="photo of a person" />
+                <p class="img-description">{this.state.description[index]}</p>
+              </Card>
+            )
         })}
       </div>
     );
