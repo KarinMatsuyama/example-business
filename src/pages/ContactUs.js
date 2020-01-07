@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import { Row, Button, Col } from 'react-bootstrap';
 
 import ExternalAPI from '../api/ExternalAPI.js';
 import ContactEmailForm from '../components/ContactEmailForm/ContactEmailForm'
@@ -26,9 +26,14 @@ class ContactUs extends Component {
     return (
       <div id="contact">
         <h2>CONTACT</h2>
-        <BusinessDetails />
-        <Button>Get a quote!</Button>
-        <ContactEmailForm />
+        <Row>
+          <Col className="container">
+          <ContactEmailForm />
+          </Col>
+          <Col className="container">
+          <BusinessDetails />
+          </Col>
+        </Row>
       </div>
     );
   }
